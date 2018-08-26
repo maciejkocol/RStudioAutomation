@@ -41,8 +41,7 @@ public class IdeLoadTest extends BaseTest {
      * @throws Exception
      */
     @Test(priority = 0)
-    @Parameters({"user", "pass"})
-    public void test_Project_IDE_Loads(@Optional("") String user, @Optional("") String pass) throws Exception{
+    public void test_Project_IDE_Loads() throws Exception{
 
         // Create Projects page object
         projectsPage = new ProjectsPage(driver);
@@ -59,7 +58,7 @@ public class IdeLoadTest extends BaseTest {
         // Create new project within space
         projectsPage.createNewProjectWithinSpace();
 
-        // Switch to IDE iframe
+        // Switch to IDE frame
         projectsPage.switchToIdeFrame();
 
         // Verify IDE console is present
