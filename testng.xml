@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RStudio Automation Test Suite">
+  <parameter name="user" value="(user)"></parameter>
+  <parameter name="pass" value="(pass)"></parameter>
+  <test thread-count="5" name="Create Project Test">
+    <classes>
+      <class name="com.rstudio.test.IdeLoadTest"/>
+    </classes>
+  </test> <!-- Decrypted Email Body Test -->
+</suite> <!-- Suite -->
